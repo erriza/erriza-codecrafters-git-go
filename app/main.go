@@ -39,8 +39,6 @@ func main() {
 			os.Exit(1)
 		}
 
-		fmt.Println("LOGS ARGS", os.Args)
-
 		readFlag := os.Args[2]
 		objectHash := os.Args[3]
 
@@ -73,8 +71,6 @@ func main() {
 			os.Exit(1)
 		}
 		r.Close()
-
-		fmt.Println("Decompressed Data from blob", decompressedData)
 
 		//Find the idx of the null terminaron
 		nullIndex := bytes.IndexByte(decompressedData, 0)
