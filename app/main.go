@@ -52,7 +52,7 @@ func main() {
 		dirName := objectHash[:2]
 		fileName := objectHash[2:]
 
-		filePath := fmt.Sprintf("./git/objects/%s/%s", dirName, fileName)
+		filePath := fmt.Sprintf("./.git/objects/%s/%s", dirName, fileName)
 
 		fileContents, err := os.ReadFile(filePath)
 
